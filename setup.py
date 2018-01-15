@@ -17,7 +17,7 @@ setup(
 
     py_modules=['tty_menu'],
     include_package_data=True,
-    platforms=['OSX', 'Linux'],
+    platforms="OSX, Linux",
     install_requires=[],
 
     classifiers=[
