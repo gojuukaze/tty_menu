@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tty_menu",
-    version="0.23",
+    version="1.0.1",
     description="terminal menu(一个命令行上下选择菜单)",
     long_description=open("README.rst").read(),
     license="GUN V3.0",
