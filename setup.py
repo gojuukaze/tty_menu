@@ -6,9 +6,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="tty_menu",
-    version="1.0",
-    description="terminal menu(命令行菜单)",
-    long_description="一个命令行上下选择菜单",
+    version="0.23",
+    description="terminal menu(一个命令行上下选择菜单)",
+    long_description=open("README.rst").read(),
     license="GUN V3.0",
 
     url="https://github.com/gojuukaze/tty_menu",

@@ -1,21 +1,20 @@
 tty_menu
-=======
+==========================
+
 This project is used to create menu command-line
 一个快速创建命令行菜单的工具
 
-.. image:: ./ex.gif
+.. image:: https://github.com/gojuukaze/tty_menu/blob/master/ex.gif?raw=true
 
+Install
+----------------------
 
-----
+.. code-block:: bash
 
-Platforms :  OSX, Linux
+    pip install tty_menu
 
-
-
-
-----
-
-Example :
+Example
+----------------------
 
 .. code-block:: python
 
