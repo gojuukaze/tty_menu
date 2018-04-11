@@ -9,14 +9,13 @@ This project is used to create menu command-line
 Install
 ----------------------
 
-.. code-block:: bash
+```bash
 
     pip install tty_menu
-
+```
 Example
 ----------------------
-
-.. code-block:: python
+```python
 
     from tty_menu import tty_menu
 
@@ -24,3 +23,4 @@ Example
     pos = tty_menu(l, "What is your word?")
 
     print("Your word is %s" % (l[pos]))
+```
