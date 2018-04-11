@@ -10,17 +10,16 @@ Install
 ----------------------
 
 ```bash
-
-    pip install tty_menu
+pip install tty_menu
 ```
 Example
 ----------------------
 ```python
 
-    from tty_menu import tty_menu
+from tty_menu import tty_menu
 
-    l = ['a', 'b', 'c']
-    pos = tty_menu(l, "What is your word?")
+l = ['a', 'b', 'c']
+pos = tty_menu(l, "What is your word?")
 
-    print("Your word is %s" % (l[pos]))
+print("Your word is %s" % (l[pos]))
 ```
