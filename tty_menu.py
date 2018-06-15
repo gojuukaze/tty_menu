@@ -22,8 +22,6 @@ def show_choose(choose, start_line, pos):
         i += 1
         s += temp
     s += '\n'
-    with open('aa.log', 'w')as f:
-        f.write(s)
     sys.stdout.write(s)
     sys.stdout.flush()
 
