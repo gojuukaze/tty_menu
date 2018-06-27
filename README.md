@@ -4,7 +4,7 @@ tty_menu
 This project is used to create menu command-line
 一个快速创建命令行菜单的工具
 
-![demo](https://github.com/gojuukaze/tty_menu/blob/master/ex.gif)
+![demo](https://raw.githubusercontent.com/gojuukaze/tty_menu/master/ex.gif)
 
 Install
 ----------------------
