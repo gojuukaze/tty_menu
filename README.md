@@ -23,3 +23,10 @@ pos = tty_menu(l, "What is your word?")
 
 print("Your word is %s" % (l[pos]))
 ```
+
+chang_log
+---------------
+
+* 1.0.2 : rm log (移除无用log)
+
+* 1.0.3 : change way (更改显示菜单的方式，不在需要清屏了)

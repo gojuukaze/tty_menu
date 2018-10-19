@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tty_menu",
-    version="1.0.2",
+    version="1.0.3",
     description="terminal menu(一个命令行上下选择菜单)",
     long_description=open("README.rst").read(),
     license="GUN V3.0",
@@ -24,6 +24,7 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
@@ -33,7 +34,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Development Status :: 5 - Production/Stable'
+        'Programming Language :: Python :: 3.7',
+        'Development Status :: 5 - Production/Stable',
     ],
 
 )

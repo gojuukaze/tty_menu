@@ -10,19 +10,24 @@ DOWN = '\x1b[B'
 ENTER = '\r'
 
 
-def show_choose(choose, start_line, pos):
+def show_choose(choose, pos):
     i = 0
     s = ''
     while i < len(choose):
         if i == pos:
-            temp = '\033[%s;0H\033[32;1m > ' % (start_line + i)
+            temp = '\033[32;1m >  '
         else:
-            temp = '\033[%s;0H\033[0m   ' % (start_line + i)
-        temp += str(choose[i])
+            temp = '    '
+        temp += str(choose[i]) + '\033[0m\n'
         i += 1
         s += temp
     s += '\n'
     sys.stdout.write(s)
+    sys.stdout.flush()
+
+
+def clear_choose(choose):
+    sys.stdout.write('\033[%dA\033[K' % (len(choose) + 1,))
     sys.stdout.flush()
 
 
@@ -34,19 +39,19 @@ def get_input():
     return ch
 
 
-def show_menu(choose, title=None, pos=0):
-    start_line = 0 if not title else 2
-    if title:
-        sys.stdout.write('\033[0;0H\033[0m' + title)
+def show_menu(choose, title=None, pos=0, is_first=True):
+    if title and is_first:
+        sys.stdout.write(title + '\n')
         sys.stdout.flush()
+    if not is_first:
+        clear_choose(choose)
 
-    show_choose(choose, start_line, pos)
+    show_choose(choose, pos)
 
 
 def tty_menu(choose, title=None):
     pos = 0
 
-    os.system('clear')
     show_menu(choose, title, pos)
 
     while True:
@@ -71,5 +76,10 @@ def tty_menu(choose, title=None):
             pos = len(choose) - 1
         elif pos >= len(choose):
             pos = 0
+        show_menu(choose, title, pos, False)
 
-        show_menu(choose, title, pos)
+
+if __name__ == '__main__':
+    l = ['a', 'b', 'c', 'd']
+    pos = tty_menu(l, title='What is your word?')
+    print("Your word is %s" % (l[pos]))
