@@ -37,5 +37,4 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Development Status :: 5 - Production/Stable',
     ],
-
 )

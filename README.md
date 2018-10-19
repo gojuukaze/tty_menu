@@ -25,7 +25,7 @@ print("Your word is %s" % (l[pos]))
 ```
 
 chang_log
----------------
+----------------
 
 * 1.0.2 : rm log (移除无用log)
 

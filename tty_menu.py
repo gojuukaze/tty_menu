@@ -80,6 +80,7 @@ def tty_menu(choose, title=None):
 
 
 if __name__ == '__main__':
+
     l = ['a', 'b', 'c', 'd']
     pos = tty_menu(l, title='What is your word?')
     print("Your word is %s" % (l[pos]))
