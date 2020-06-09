@@ -1,3 +1,25 @@
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Note</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p>This repo is no longer maintained</p>
+<p>My New repo support Windows, Linux, OSX at <a href="https://github.com/gojuukaze/terminal_layout/tree/master/terminal_layout/extensions/choice">terminal_layout</a></p>
+  
+<p>这个库不再维护，新的库支持Windows, Linux, OSX。链接 -> <a href="https://github.com/gojuukaze/terminal_layout/tree/master/terminal_layout/extensions/choice">terminal_layout</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 tty_menu
 ==========================
 
